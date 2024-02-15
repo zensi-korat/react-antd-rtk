@@ -1,5 +1,5 @@
 import { Outlet, Navigate } from "react-router-dom";
-import Layout from "src/components/layout/Layout";
+import Layout from "src/components/layout/default/Layout";
 
 const PrivateRoutes = () => {
   /**

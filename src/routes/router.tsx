@@ -3,12 +3,12 @@ import { createBrowserRouter, createRoutesFromElements, Route } from "react-rout
 import { SuspenseErrorBoundary } from "./SuspenseErrorBoundary";
 
 //lazy imports
-const Home = lazy(() => import("../components/home/Home"));
-const About = lazy(() => import("../components/about/About"));
-const Contact = lazy(() => import("../components/contact/Contact"));
-const LayoutAuth = lazy(() => import("../components/layoutAuth/LayoutAuth"));
-const Login = lazy(() => import("../components/login/Login"));
-const Register = lazy(() => import("../components/register/Register"));
+const Home = lazy(() => import("../pages/Home"));
+const About = lazy(() => import("../pages/About"));
+const Contact = lazy(() => import("../pages/Contact"));
+const LayoutAuth = lazy(() => import("../components/layout/auth/LayoutAuth"));
+const Login = lazy(() => import("../pages/Login"));
+const Register = lazy(() => import("../pages/Register"));
 const PrivateRoutes = lazy(() => import("./PrivateRouter"));
 
 const router = createBrowserRouter(

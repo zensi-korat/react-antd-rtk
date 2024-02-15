@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "src/store";
 import { getPostApi } from "src/store/features/postSlice";
+import { ReduxThunkExampleStyle } from "./ReduxThunkExample.style";
+import { Spin } from "antd";
 
 const QueryExample = () => {
   const dispatch = useAppDispatch();
@@ -12,13 +14,24 @@ const QueryExample = () => {
   }, []);
 
   return (
-    <div>
-      {loading && <div>Loading...</div>}
-      {posts &&
-        posts?.map((post) => {
-          return <div key={post.id}>{post.title}</div>;
-        })}
-    </div>
+    <ReduxThunkExampleStyle>
+      <h1>Contact US</h1>
+      {loading && (
+        <div>
+          <Spin />
+        </div>
+      )}
+      <div className="post">
+        {posts &&
+          posts?.map((post) => {
+            return (
+              <div className="post__item" key={post.id}>
+                {post.title}
+              </div>
+            );
+          })}
+      </div>
+    </ReduxThunkExampleStyle>
   );
 };
 

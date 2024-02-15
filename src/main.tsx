@@ -1,7 +1,5 @@
 import { Provider } from "react-redux";
 import { store } from "src/store";
-import { ConfigProvider } from "antd";
-import theme from "src/theme/themeAntd";
 import "src/utils/i18n";
 
 import React from "react";
@@ -12,9 +10,7 @@ import "./index.css";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Provider store={store}>
-      <ConfigProvider theme={theme}>
-        <App />
-      </ConfigProvider>
+      <App />
     </Provider>
   </React.StrictMode>,
 );
