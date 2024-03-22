@@ -3,6 +3,7 @@ import { Select } from ".";
 
 const meta: Meta<typeof Select> = {
   title: "Ant Design/Select",
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
   },

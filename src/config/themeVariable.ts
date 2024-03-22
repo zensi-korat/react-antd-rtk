@@ -96,4 +96,7 @@ export const componentTokens: OverrideToken = {
   Tree: {
     colorPrimary: "var(--primary-500)",
   },
+  Input: {
+    colorPrimary: "var(--primary-500)",
+  },
 };

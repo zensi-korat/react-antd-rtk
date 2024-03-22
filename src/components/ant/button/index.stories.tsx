@@ -3,6 +3,7 @@ import { Button } from ".";
 
 const meta: Meta<typeof Button> = {
   title: "Ant Design/Button",
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
   },
